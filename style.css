@@ -1,5 +1,7 @@
 body{
     margin-top: 50px;
+    background-image: url("360_F_217565806_43ACZF66SkiLyvuqggryX2vZ5nVDuc0p.jpg");
+    background-size: cover;
 }
 
 
@@ -8,14 +10,15 @@ body{
     height: 300px;
     margin: 0 auto;
     text-align: center;
-    border: 1px solid black;
-    background-color: aqua;
+    border: 1px solid green;
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 #guessLabel{
     display: block;
     padding-top: 50px;
     font-size:1.5em;
+    color: white;
 }
 #guessBox{
     margin-top:10px;
@@ -24,17 +27,19 @@ body{
     margin-top: 20px;
     font-size: 1.5em;
     color: white;
-    background-color: rgb(46, 145, 231);
+    background-color: rgb(0, 53, 9);
     cursor: pointer;
     border-radius: 5px;
 }
 #guessBtn:hover{
-    background-color: blue;
+    background-color: rgb(33, 213, 78);
 }
 #userGuess{
     margin-top: 35px;
     font-size: 20px;
+    color: white;
 }
 #hint{
     margin-top: 10px;
+    color:white;
 }
