@@ -6,7 +6,7 @@ const hint = document.getElementById("hint");
 const min = 1;
 const max = 100;
 const randomNum = Math.floor(Math.random() * max) + min;
-console.log(randomNum);
+let NumGuesses = 0;
 
 // On Click function
 guessBtn.onclick = function() {
@@ -15,12 +15,15 @@ guessBtn.onclick = function() {
 
     if(guessBox.value > randomNum && guessBox.value <= 100){
         hint.textContent = `${guessBox.value} is too high...`
+        NumGuesses += 1
     }
     else if(guessBox.value < randomNum && guessBox.value >= 1){
         hint.textContent = `${guessBox.value} is too low...`
+        NumGuesses += 1
     }
     else if(guessBox.value = randomNum){
-        hint.textContent = `${guessBox.value} is correct!`
+        hint.textContent = `${guessBox.value} is correct! That took ${NumGuesses} guesses.`
+        NumGuesses += 1
     }
     else{
         hint.textContent = `Please choose a number between 1-100.`
