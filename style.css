@@ -5,7 +5,7 @@ body{
 
 .box{
     width: 500px;
-    height: 200px;
+    height: 300px;
     margin: 0 auto;
     text-align: center;
     border: 1px solid black;
@@ -27,8 +27,14 @@ body{
     background-color: rgb(46, 145, 231);
     cursor: pointer;
     border-radius: 5px;
-    
 }
 #guessBtn:hover{
     background-color: blue;
+}
+#userGuess{
+    margin-top: 35px;
+    font-size: 20px;
+}
+#hint{
+    margin-top: 10px;
 }
