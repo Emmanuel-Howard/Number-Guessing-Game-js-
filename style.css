@@ -1,5 +1,34 @@
+body{
+    margin-top: 50px;
+}
+
+
 .box{
     width: 500px;
+    height: 200px;
+    margin: 0 auto;
     text-align: center;
-    border: 1px, solid, black
+    border: 1px solid black;
+    background-color: aqua;
+    border-radius: 10px;
+}
+#guessLabel{
+    display: block;
+    padding-top: 50px;
+    font-size:1.5em;
+}
+#guessBox{
+    margin-top:10px;
+}
+#guessBtn{
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(46, 145, 231);
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+#guessBtn:hover{
+    background-color: blue;
 }
